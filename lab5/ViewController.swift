@@ -7,13 +7,31 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
+    
 
+    @IBOutlet weak var textLabel: UITextField!
+    
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+            super.viewDidLoad()
+            
+        }
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "segueToSecondViewController" {
+               if let destinationVC = segue.destination as? SecondViewController {
+                   destinationVC.receivedText = textLabel.text
+               }
+           }
+       }
+    
+    
+    @IBAction func goToSecondVCButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "segueToSecondViewController", sender: self)
     }
-
-
+    
 }
-

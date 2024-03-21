@@ -16,6 +16,7 @@
 		54EB73932BA6CAE4002DAF95 /* lab5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB73922BA6CAE4002DAF95 /* lab5Tests.swift */; };
 		54EB739D2BA6CAE4002DAF95 /* lab5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB739C2BA6CAE4002DAF95 /* lab5UITests.swift */; };
 		54EB739F2BA6CAE4002DAF95 /* lab5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB739E2BA6CAE4002DAF95 /* lab5UITestsLaunchTests.swift */; };
+		54EB73B42BAC9C34002DAF95 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB73B32BAC9C34002DAF95 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		54EB73982BA6CAE4002DAF95 /* lab5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EB739C2BA6CAE4002DAF95 /* lab5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab5UITests.swift; sourceTree = "<group>"; };
 		54EB739E2BA6CAE4002DAF95 /* lab5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab5UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54EB73B32BAC9C34002DAF95 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				54EB73842BA6CAE3002DAF95 /* Assets.xcassets */,
 				54EB73862BA6CAE3002DAF95 /* LaunchScreen.storyboard */,
 				54EB73892BA6CAE3002DAF95 /* Info.plist */,
+				54EB73B32BAC9C34002DAF95 /* SecondViewController.swift */,
 			);
 			path = lab5;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EB73B42BAC9C34002DAF95 /* SecondViewController.swift in Sources */,
 				54EB73802BA6CAE1002DAF95 /* ViewController.swift in Sources */,
 				54EB737C2BA6CAE1002DAF95 /* AppDelegate.swift in Sources */,
 				54EB737E2BA6CAE1002DAF95 /* SceneDelegate.swift in Sources */,
