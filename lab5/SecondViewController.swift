@@ -8,18 +8,16 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
-
-    @IBOutlet weak var recieveLabel: UILabel!
     
-    var receivedText: String?
-
-        override func viewDidLoad() {
-            super.viewDidLoad()
-
-            if let text = receivedText {
-                recieveLabel.text = text
-            }
-        }
+    @IBOutlet weak var message: UILabel!
+    var receivedMessage: String?
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let messageRec = receivedMessage {
+                    message.text = messageRec
+                }
+    }
 
 }

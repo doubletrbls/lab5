@@ -10,28 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
-    @IBOutlet weak var textLabel: UITextField!
     
-    
-    
-    override func viewDidLoad() {
-            super.viewDidLoad()
-            
-        }
-
+    @IBOutlet weak var textField: UITextField!
+    var message: String?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "segueToSecondViewController" {
-               if let destinationVC = segue.destination as? SecondViewController {
-                   destinationVC.receivedText = textLabel.text
-               }
-           }
-       }
-    
-    
-    @IBAction func goToSecondVCButtonTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueToSecondViewController", sender: self)
+        if segue.identifier == "toSecond" {
+                    if let destinationVC = segue.destination as? SecondViewController {
+                        destinationVC.receivedMessage = textField.text
+                    }
+                }
+    }
+
+    @IBAction func sendMessage(_ sender: UIButton) {
+        print("sendMessage called")
+        performSegue(withIdentifier: "toSecond", sender: self)
     }
     
 }
