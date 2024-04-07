@@ -10,11 +10,25 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //let initialViewController =
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        if AuthService.shared.isSigned {
+            window.rootViewController = TabBarViewController ()
+        } else {
+            let navigateVC = UINavigationController(rootViewController: PrimaryViewController())
+            navigateVC.navigationBar.prefersLargeTitles = true
+            navigateVC.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
+            window.rootViewController = navigateVC
+        }
+        
+        window.makeKeyAndVisible()
+        self.window = window
+        
+
         return true
     }
 
